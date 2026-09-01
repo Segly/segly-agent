@@ -1,0 +1,33 @@
+{
+  "name": "segly",
+  "version": "0.1.0",
+  "description": "Turn images into named, animation-ready layers and downloadable artifacts with Segly.",
+  "author": {
+    "name": "Segly",
+    "email": "support@segly.io",
+    "url": "https://segly.io"
+  },
+  "homepage": "https://segly.io/agents",
+  "repository": "https://github.com/Segly/segly-agent",
+  "license": "MIT",
+  "keywords": ["image-segmentation", "animation", "spine", "live2d", "mcp"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Segly",
+    "shortDescription": "Create animation-ready layers from images.",
+    "longDescription": "Predict named layers for free, submit explicit five-credit segmentations, track asynchronous jobs, and download verified ZIP, Spine PSD, Live2D PSD, mask, and rig artifacts.",
+    "developerName": "Segly",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://segly.io/agents",
+    "privacyPolicyURL": "https://segly.io/privacy",
+    "termsOfServiceURL": "https://segly.io/terms",
+    "defaultPrompt": [
+      "Predict animation-ready layers for this image.",
+      "Segment this image after showing the five-credit cost.",
+      "Download and verify my completed Segly artifact."
+    ],
+    "brandColor": "#6D5EF8"
+  },
+  "mcpServers": "./.mcp.json"
+}

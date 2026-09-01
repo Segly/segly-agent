@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "segly": {
+      "command": "npx",
+      "args": ["-y", "@segly/cli@0.1.0", "mcp"],
+      "env": {
+        "SEGLY_API_URL": "https://api.segly.io"
+      }
+    }
+  }
+}

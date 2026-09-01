@@ -1,0 +1,4 @@
+interface:
+  display_name: "Segly"
+  short_description: "Create animation-ready image segmentation assets"
+  default_prompt: "Use $segly to segment an image into named animation-ready layers."

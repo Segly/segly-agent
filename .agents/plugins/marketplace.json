@@ -1,0 +1,20 @@
+{
+  "name": "segly-agent",
+  "interface": {
+    "displayName": "Segly Agent Tools"
+  },
+  "plugins": [
+    {
+      "name": "segly",
+      "source": {
+        "source": "local",
+        "path": "./plugins/segly"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

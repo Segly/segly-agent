@@ -1,0 +1,63 @@
+{
+  "name": "@segly/cli",
+  "version": "0.1.0",
+  "license": "MIT",
+  "mcpName": "io.github.segly/segly",
+  "description": "Agent-friendly command line and MCP client for Segly image segmentation",
+  "type": "module",
+  "bin": {
+    "segly": "./dist/bin.js"
+  },
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Segly/segly-agent.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://segly.io/agents",
+  "bugs": {
+    "url": "https://github.com/Segly/segly-agent/issues"
+  },
+  "author": "Segly <support@segly.io>",
+  "keywords": [
+    "segly",
+    "segmentation",
+    "mcp",
+    "ai-agent",
+    "spine",
+    "live2d"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build --silent && node --test tests/*.test.js",
+    "prepack": "npm run build && npm test"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "zod": "^4.5.2",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "@modelcontextprotocol/client": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.42",
+    "typescript": "^5.9.3"
+  }
+}
